@@ -1,0 +1,11 @@
+server:
+  port : 8081 #端口号
+  servlet:
+    context-path: /test #请求路径
+cupSize: B
+age: 18
+content: "cupSize:${cupSize}+age:${age}" #注解里面使用注解
+
+girl:
+  cupSize : B
+  age : 22

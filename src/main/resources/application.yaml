@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbgirl?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: baoxian_admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#该文件的名称一定要写成application才能从该文件中获取配置信息
+#通过active: prod来区分是哪个配置文件，哪个环境
